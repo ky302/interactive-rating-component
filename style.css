@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  /*paragraph*/
+  --font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+main {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 10px;
+  color: var(--light-grey);
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.card {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  max-width: 25%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.card-sec {
+}
+
+.logo {
+  background-color: var(--dark-blue);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.logo > img {
+  width: 15px;
+}
+
+.card-desc {
+  margin: 15px 0px;
+}
+.card-desc2 {
+  margin: 15px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rate {
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  padding: 6px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  margin: 0px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating .btn {
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: var(--medium-grey);
+  font-weight: 700;
+  outline: none;
+  border: none;
+  margin: 8px;
+  width: 50px;
+  height: 35px;
+  border-radius: 100%;
+}
+.rating .btn:focus {
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+.rating .btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  transition: all ease-in-out 0.3s;
+}
+.submite {
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  word-spacing: ;
+  color: var(--white);
+  width: 100%;
+  padding: 8px 0px;
+  border-radius: 20px;
+  background-color: var(--orange);
+}
+.submite:focus {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.submite:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: all ease-in-out 0.5s;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1195px) {
+  .card {
+    max-width: 35%;
+  }
+}
+@media screen and (max-width: 877px) {
+  .card {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    max-width: 90%;
+  }
+}
